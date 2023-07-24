@@ -17,4 +17,4 @@ Features of this project are as below:
 
 Image shows JSON data as feedback 
 
-<img src="https://github.com/Laxr24/NID-verification/blob/main/media/json_data.png" style="display:block; margin:0 auto;" width="300px"/>
+<img src="https://github.com/Laxr24/NID-verification/blob/main/media/json_data.png" style="" width="100%"/>
