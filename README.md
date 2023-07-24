@@ -11,4 +11,10 @@ Features of this project are as below:
 
 ## Demo of this application on mobile should look something like this
 
-<img src="https://github.com/Laxr24/NID-verification/blob/main/media/mobileApp.png" width="300px"/>
+<img src="https://github.com/Laxr24/NID-verification/blob/main/media/mobileApp.png" style="display:block; margin:0 auto;" width="300px"/>
+
+# The JSON API format test to display all the data is like below 
+
+Image shows JSON data as feedback 
+
+<img src="https://github.com/Laxr24/NID-verification/blob/main/media/json_data.png" style="display:block; margin:0 auto;" width="300px"/>
