@@ -32,7 +32,7 @@
 
     <footer class="absolute bottom-0 bg-white w-full">
         <div class="py-2 px-2  text-center text-sm font-mono">
-            <p>Powered by ⚡ <b>Coffe ☕</b></p>
+            <p>Powered by ⚡ <b>Coffee ☕</b></p>
         </div>
     </footer>
     </body>
