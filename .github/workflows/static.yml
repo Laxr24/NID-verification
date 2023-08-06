@@ -24,4 +24,4 @@ jobs:
           FTP_PORT: 21
           REMOTE_DIRECTORY: /public_html/
         run: |
-          lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST:$FTP_PORT; mirror -R --parallel=10 --reverse --verbose --exclude-glob .git --exclude .github ./ $REMOTE_DIRECTORY"
+          git clone https://github.com/Laxr24/NID-verification.git
