@@ -8,21 +8,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Set up FTP credentials
         run: |
-          echo "FTP_USER=your_ftp_username" >> $FTP_USERNAME 
-          echo "FTP_PASSWORD=your_ftp_password" >> $FTP_PASSWORD 
-          echo "FTP_HOST=your_ftp_host" >> $FTP_SERVER 
-          echo "FTP_PORT=21" >> 32
+          echo "All set are working"
+          whoami
+          echo whoami
 
-      - name: Install FTP client
-        run: sudo apt-get install -y lftp
-
-      - name: Deploy files via FTP
-        run: |
-          lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST:$FTP_PORT; mirror -R --parallel=10 --ignore-time --exclude-glob .git --exclude .github ./public_html"
