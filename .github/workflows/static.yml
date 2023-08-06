@@ -1,4 +1,4 @@
-name: FTP Deployment
+name: FTP Deploy
 
 on:
   push:
@@ -8,14 +8,20 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up FTP credentials
-        run: |
-          echo "All set are working"
-      - name: Dummy code 
-        run: |
-          whoami
+      - name: Install FTP client
+        run: sudo apt-get install -y lftp
 
+      - name: FTP Deploy
+        env:
+          FTP_USER: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_HOST: your_ftp_host
+          FTP_PORT: 21
+          REMOTE_DIRECTORY: /public_html/
+        run: |
+          lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_HOST:$FTP_PORT; mirror -R --parallel=10 --reverse --verbose --exclude-glob .git --exclude .github ./ $REMOTE_DIRECTORY"
