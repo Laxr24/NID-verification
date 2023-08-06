@@ -15,6 +15,7 @@ jobs:
       - name: Set up FTP credentials
         run: |
           echo "All set are working"
+      - name: Dummy code 
+        run: |
           whoami
-          echo whoami
 
