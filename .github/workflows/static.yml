@@ -24,4 +24,4 @@ jobs:
           FTP_PORT: 21
           REMOTE_DIRECTORY: /public_html/
         run: |
-          git clone https://github.com/Laxr24/NID-verification.git
+          ls -af
