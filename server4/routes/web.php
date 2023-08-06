@@ -13,11 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/data', function(){
+    return fetchById(23);  
+}); 
+
+
+function getAllData(){
     $users_group_one = DB::table('mytable')->select('id', 'name', 'address')->get();
     $encoded=[]; 
 
@@ -29,4 +36,8 @@ Route::get('/data', function(){
         array_push($encoded, $single); 
     }
     return $encoded; 
-}); 
+}
+
+function fetchById($id){
+    return "This is the ID ".$id; 
+}
