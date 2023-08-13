@@ -23,13 +23,14 @@
             <div class="max-w-md px-4 py-2 mt-2 mx-auto rounded-md shadow md bg-green-300">
                 <h2 class="text-xl text-gray-800 font-bold">BlockChain ⛓</h2>
                 <ol>
-                    <li class="mt-2">1. <a href="#" class="hover:text-red-500 hover:font-bold transition text-sm text-left">Genral Idea of BlockChain - Proof of concept</a></li>
+                    <li class="mt-2">1. <a href="https://nestordhaka.com/serverone/public/data" class="hover:text-red-500 hover:font-bold transition text-sm text-left">Genral Idea of BlockChain - Proof of concept</a></li>
                     <li class="mt-2">2. <a href="#" class="hover:text-red-500 hover:font-bold transition text-sm text-left">Single level Encryption(BlcokChain) - General Encryption</a></li>
                     <li class="mt-2">3. <a href="#" class="hover:text-red-500 hover:font-bold transition text-sm text-left">Multi Level Encryption - BlockChain Encryption</a></li>
                 </ol>
             </div>
         </div>
 
+        
     <footer class="absolute bottom-0 bg-white w-full">
         <div class="py-2 px-2  text-center text-sm font-mono">
             <p>Powered by ⚡ <b>Coffee ☕</b></p>
