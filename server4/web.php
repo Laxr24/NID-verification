@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     
     // return view('welcome');
-    return view("searchPage"); 
+    return "Welcome to server 4"; 
 });
 
 
@@ -35,8 +35,7 @@ Route::get('/data/{id}', function($id){
 // Find data by id with API key
 Route::get("/data/{key}/{id}", function($key, $id){
     if($key === "APIKEY12341234"){
-        if(fetchById($id) != null || sizeof(fetchById($id)) != 0){
-        $object= ["response_code"=>200, 
+        return ["response_code"=>200, 
         "status"=>"API Key Error",
         "vendor_name"=>"Nestor Dhaka",
         "valid_till"=> "20240723",
@@ -49,16 +48,11 @@ Route::get("/data/{key}/{id}", function($key, $id){
             "token"=>"00f90fjkksf20023992lkjfll2kjljdlk2jjjfl2",
             "image"=>"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDjM52U7InO4iadI0A2DOnpzxF-yj56nFAUFhcSY&s",
             "data"=> fetchById($id) 
-            ]
-        ]; 
-        return $object;
-        } 
-        else{
-            return "Invalid search params."; 
-        } 
-}else{
-    return ["response_code"=>200, "status"=>"API Key Error"]; 
-}
+        ] 
+    ]; 
+    }else{
+        return ["response_code"=>200, "status"=>"API Key Error"]; 
+    }
 });
 
 

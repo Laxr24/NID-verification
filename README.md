@@ -18,3 +18,7 @@ Features of this project are as below:
 Image shows JSON data as feedback 
 
 <img src="https://github.com/Laxr24/NID-verification/blob/main/media/json_data.png" style="" width="100%"/>
+
+### The API key is the client API key who wants to taste NID number
+
+The API key will be provided to all of its 
